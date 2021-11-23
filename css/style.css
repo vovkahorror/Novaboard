@@ -60,7 +60,7 @@ body {
   border-bottom: 2px solid #fff;
 }
 
-.header__link .is-active {
+.header__link.is-active {
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
 }
@@ -68,10 +68,20 @@ body {
 .title {
   position: relative;
   background-image: url("../image/art-museum-render.jpg");
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 681px;
+}
+
+.title__shadow {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  top: 75px;
 }
 
 .title__heading {
@@ -217,11 +227,4 @@ body {
 
 .slick-dots button::before {
   display: none;
-}
-
-.title__shadow {
-  position: absolute;
-  z-index: 0;
-  top: 75px;
-  margin: 0 auto;
 }
