@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-  background-color: #139f49;
+  background-image: url("../image/header.png");
 }
 
 .container__out {
@@ -68,7 +68,7 @@ body {
 .title {
   position: relative;
   background-image: url("../image/art-museum-render.jpg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 681px;
@@ -227,4 +227,41 @@ body {
 
 .slick-dots button::before {
   display: none;
+}
+
+.polystyrene {
+  padding-top: 69px;
+  padding-bottom: 20px;
+  background-image: url("../image/penopolistirol.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.polystyrene__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.polystyrene__content * {
+  margin: 0 auto;
+}
+
+.polystyrene__content-logo {
+  margin-bottom: 15px;
+}
+
+.polystyrene__content-title {
+  margin-bottom: 14px;
+  font-family: EuropeExt, Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #073d79;
+}
+
+.polystyrene__content-youtube {
+  border: 1px solid #252b2f;
 }
