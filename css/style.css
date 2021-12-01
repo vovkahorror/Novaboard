@@ -236,6 +236,17 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: auto;
+  position: relative;
+}
+
+.polystyrene__shadow {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  top: 460px;
 }
 
 .polystyrene__content {
@@ -265,6 +276,7 @@ body {
 .polystyrene__content-youtube {
   border: 1px solid #252b2f;
   display: flex;
+  z-index: 1;
 }
 
 .polystyrene__content-text {
@@ -293,7 +305,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
-  text-shadow: 0 1px #909090, 0 0 2px #e9e9e9;
+  text-shadow: 0 1px 3px #01712c;
 }
 
 .polystyrene__content-details-button:hover {
@@ -303,4 +315,143 @@ body {
 .polystyrene__content-details-button:active {
   filter: saturate(80%);
   transform: translateY(2px);
+}
+
+.scope {
+  padding-top: 46px;
+  padding-bottom: 70px;
+  background-image: url("../image/house-pencil.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+}
+
+.scope__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.scope__content * {
+  margin: 0 auto;
+}
+
+.scope__content-title {
+  font-family: EuropeExt, Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #073d79;
+  margin-bottom: 30px;
+}
+
+.scope__content-engineering {
+  display: flex;
+  justify-content: center;
+}
+
+.scope__content-engineering-civil,
+.scope__content-engineering-industrial {
+  width: 610px;
+  height: 308px;
+  position: relative;
+  margin-right: 5px;
+  box-sizing: border-box;
+}
+
+.scope__content-engineering-civil {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../image/scope-background-1.jpg");
+  background-position: 0 -76px;
+  text-align: right;
+}
+
+.scope__content-engineering-industrial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../image/scope-background-2.jpg");
+  background-position: 0 -25px;
+}
+
+.scope__content-engineering-civil-title,
+.scope__content-engineering-industrial-title {
+  padding: 18px 47px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.scope__content-engineering-civil-string,
+.scope__content-engineering-industrial-string {
+  position: absolute;
+  top: 62px;
+  display: flex;
+  justify-content: right;
+  height: 18px;
+}
+
+.scope__content-engineering-civil-string {
+  right: 0;
+}
+
+.scope__content-engineering-industrial-string {
+  left: 0;
+}
+
+.scope__content-engineering-civil-string-invisible,
+.scope__content-engineering-industrial-string-invisible {
+  width: 47px;
+  background-color: rgba(1, 152, 59, 0.25);
+}
+
+.scope__content-engineering-civil-string-semiinvisible,
+.scope__content-engineering-industrial-string-semiinvisible {
+  width: 47px;
+  background-color: rgba(1, 152, 59, 0.5);
+}
+
+.scope__content-engineering-civil-string-text,
+.scope__content-engineering-industrial-string-text {
+  padding: 0 48px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #01983b;
+}
+
+.scope__content-engineering-civil-string2,
+.scope__content-engineering-industrial-string2 {
+  margin-top: 24px;
+}
+
+.scope__content-engineering-civil-string3,
+.scope__content-engineering-industrial-string3 {
+  margin-top: 48px;
+}
+
+.scope__content-engineering-civil-logo,
+.scope__content-engineering-industrial-logo {
+  position: absolute;
+  width: 100%;
+  height: 24px;
+  bottom: 0;
+  padding: 0 49px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.scope__content-engineering-civil-logo {
+  right: 0;
+}
+
+.scope__content-engineering-industrial-logo {
+  left: 0;
+}
+
+.scope__content-engineering-civil-logo-image,
+.scope__content-engineering-industrial-logo-image {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
