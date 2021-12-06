@@ -14,6 +14,10 @@
     url("../fonts/EuropeExtBold.woff") format("woff");
 }
 
+html {
+  margin: 0 auto;
+}
+
 body {
   margin: 0 auto;
   max-width: 1920px;
@@ -67,7 +71,7 @@ body {
 
 .title {
   position: relative;
-  background-image: url("../image/art-museum-render.jpg");
+  background-image: url("../image/title-background.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: auto;
@@ -76,8 +80,8 @@ body {
 
 .title__shadow {
   position: absolute;
-  left: 50%;
-  right: 50%;
+  left: 0;
+  right: 0;
   z-index: 0;
   display: flex;
   justify-content: center;
@@ -107,8 +111,7 @@ body {
   padding-right: 9px;
 }
 
-.title__heading-social-li-image:hover,
-.title__heading-social-vk-image:hover {
+.title__heading-social-image:hover {
   filter: saturate(250%);
 }
 
@@ -241,12 +244,12 @@ body {
 
 .polystyrene__shadow {
   position: absolute;
-  left: 50%;
-  right: 50%;
+  top: 460px;
+  left: 0;
+  right: 0;
   z-index: 0;
   display: flex;
   justify-content: center;
-  top: 460px;
 }
 
 .polystyrene__content {
@@ -257,6 +260,7 @@ body {
 
 .polystyrene__content * {
   margin: 0 auto;
+  text-align: center;
 }
 
 .polystyrene__content-logo {
@@ -338,12 +342,13 @@ body {
 }
 
 .scope__content-title {
+  margin-bottom: 30px;
   font-family: EuropeExt, Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
   color: #073d79;
-  margin-bottom: 30px;
 }
 
 .scope__content-engineering {
@@ -400,6 +405,16 @@ body {
   left: 0;
 }
 
+.scope__content-engineering-civil-string2,
+.scope__content-engineering-industrial-string2 {
+  margin-top: 24px;
+}
+
+.scope__content-engineering-civil-string3,
+.scope__content-engineering-industrial-string3 {
+  margin-top: 48px;
+}
+
 .scope__content-engineering-civil-string-invisible,
 .scope__content-engineering-industrial-string-invisible {
   width: 47px;
@@ -420,16 +435,6 @@ body {
   text-transform: uppercase;
   color: #fff;
   background-color: #01983b;
-}
-
-.scope__content-engineering-civil-string2,
-.scope__content-engineering-industrial-string2 {
-  margin-top: 24px;
-}
-
-.scope__content-engineering-civil-string3,
-.scope__content-engineering-industrial-string3 {
-  margin-top: 48px;
 }
 
 .scope__content-engineering-civil-logo,
@@ -527,6 +532,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
   color: #01983b;
 }
 
@@ -576,8 +582,8 @@ body {
 
 .specifications__content-shadow {
   position: absolute;
-  left: 50%;
-  right: 50%;
+  left: 0;
+  right: 0;
   z-index: 0;
   display: flex;
   justify-content: center;
@@ -609,6 +615,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
   color: #01983b;
 }
 
@@ -693,6 +700,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
   color: #2c2783;
 }
 
@@ -745,9 +753,6 @@ body {
   height: 207px;
   box-sizing: border-box;
   background-image: url("../image/contacts-background.png");
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   text-align: center;
   color: #fff;
 }
@@ -765,19 +770,19 @@ body {
 }
 
 .communications__contacts-address {
-  margin-top: 3px;
+  margin-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
 
 .communications__contacts-phone {
-  margin-top: 10px;
+  margin-top: 11px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
 
 .communications__contacts-mail {
-  margin-bottom: 37px;
+  margin-top: 9px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
@@ -793,7 +798,13 @@ body {
   text-decoration: underline;
 }
 
+.communications__contacts-phone-link:active,
+.communications__contacts-mail-link:active {
+  color: #000;
+}
+
 .communications-map {
+  display: block;
   margin-top: 164px;
   width: 100%;
   height: 337px;
@@ -836,6 +847,10 @@ body {
   margin-bottom: 130px;
 }
 
+.footer__social-image:hover {
+  filter: invert(10%);
+}
+
 .footer__development {
   position: absolute;
   bottom: 18px;
@@ -854,8 +869,4 @@ body {
 
 .footer__development-link:hover {
   text-decoration: underline;
-}
-
-.footer__social-image:hover {
-  filter: invert(10%);
 }
