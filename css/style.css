@@ -716,12 +716,12 @@ body {
   height: 205px;
   box-sizing: border-box;
   display: block;
+  transition: transform 0.2s linear, box-shadow 0.2s linear;
 }
 
 .certificates__content-gallery-image:hover {
   box-shadow: 0 0 10px #01983b;
   transform: scale(1.1);
-  transition: transform 0.2s linear;
 }
 
 .certificates__content-award {
