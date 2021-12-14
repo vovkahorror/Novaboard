@@ -864,3 +864,7 @@ body {
 .footer__development-link:hover {
   text-decoration: underline;
 }
+
+.footer__development-link:active {
+  color: #000;
+}
